@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 
 import Navbar from "react-bootstrap/Navbar";
 
-function Header() {
+function Header(props) {
   return (
     <>
       <Navbar bg="primary" variant="dark">
@@ -12,7 +12,7 @@ function Header() {
           <div className="d-flex justify-content-between align-items-center">
             <div className="text-light fw-bold ">Cart</div>
             <div className="bg-white text-success fw-bolder rounded-circle small-circle d-flex justify-content-center align-items-center ms-1 me-3">
-              2   
+             {props.data} 
             </div>
             <div className="text-light fw-bold">SignIn</div>
           </div>
