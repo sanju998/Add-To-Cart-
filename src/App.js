@@ -1,13 +1,13 @@
 import "./App.css";
 import CardComponet from "./components/CardComponet";
 import Header from "./components/Header";
-import AddToCart from "./pages/AddToCart";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import IceCream from "./assets/images/IceCream.svg";
 import IceCream2 from "./assets/images/IceCream2.svg";
 import IceCreamCone from "./assets/images/IceCreamCone.svg";
+import Chart from "./components/Chart";
 
 const CardData = [
   {
@@ -43,7 +43,7 @@ function App() {
         <Header />
         <Container className="py-5">
           <Row className="justify-content-between">
-            <Col xs={12} md={8} className="order-2 order-lg-1">
+            <Col xs={12} xl={8} className="order-2 order-xl-1">
               <Row>
                 {CardData.map((data) => {
                   return (
@@ -60,8 +60,8 @@ function App() {
                 })}
               </Row>
             </Col>
-            <Col xs={12} lg={12} xl={3} className="order-1">
-              <AddToCart />
+            <Col xs={12} xl={3} className="order-1">
+              <Chart />
             </Col>
           </Row>
         </Container>
