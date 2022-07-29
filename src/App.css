@@ -1,12 +1,76 @@
+:root {
+    --blue: #00A3FF;
+    --white: #ffffff;
+    --colorOne: #2E3F53;
+    --colorTwo: #009DF5;
+}
+
+
+
+.main-div {
+    background: url(./assets/images/Ellipse.svg) var(--blue);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: contain;
+}
+
 /* ------------------Header css------------------ */
 .small-circle {
     height: 20px;
     width: 20px;
     font-size: 10px;
 }
+
 /* ---------------CardComponet css--------------- */
-.custom-card{
-    
+.custom-card {
+    box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.1);
+    border-radius: 10px;
+}
+
+.title-card {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.texts-card {
+    color: var(--colorOne);
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.card-button,
+.AddToCart-main-div button {
+    background: var(--blue);
+    border-radius: 10px;
+    color: var(--white);
+}
+
+.card-button:hover {
+    background: var(--colorTwo);
+}
+
+.card-price-text {
+    color: var(--blue);
+}
+
+.card-image {
+    height: 325px;
+    overflow: hidden;
 }
 
 /* ------------------AddToCart------------------- */
+.AddToCart-main-div {
+    border-radius: 10px;
+}
+
+.cart-item-text {
+    color: var(--blue);
+}
+
+.incr-decr-button {
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+}
