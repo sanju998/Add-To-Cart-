@@ -5,7 +5,7 @@ import { AiOutlineMinus } from "react-icons/ai";
 function Chart(props) {
   const data=(props.firstCardData * 100) + (props.secondCardData * 50) + (props.thirdCardData * 10)
 
-  const [total, setTotal] = useState()
+
 
   return (
     <div>
